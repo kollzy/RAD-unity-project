@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cubegenerator : MonoBehaviour
+public class    Cylindergenerator : MonoBehaviour
 
 {
-    public Transform cubeTemplate;
+    public Transform cylinderTemplate;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +17,7 @@ public class cubegenerator : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            Instantiate(cubeTemplate);
+            Instantiate(cylinderTemplate, transform.position, transform.rotation);
         }
     }
 }

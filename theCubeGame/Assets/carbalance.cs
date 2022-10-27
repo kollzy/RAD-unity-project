@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class carbalance : MonoBehaviour
 {
-	// i got this code from the internet and i modified it a bit
+	// i got this code from the internet and i modified it a bit (https://www.youtube.com/watch?v=BwL3Dm8GJtQ)
 	// Start is called before the first frame update
 
 
 
 	public WheelCollider WheelL;
 	public WheelCollider WheelR;
-	public float balance = 5000.0f;
+	public float balance = 3000.0f;
 
 	private Rigidbody car;
 
