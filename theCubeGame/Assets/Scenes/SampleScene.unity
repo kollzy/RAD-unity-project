@@ -192,37 +192,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 104696f8b5f23d24586d858b68916bdc, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab2e556b62273434dad486c1e0a4ebf9, type: 3}
---- !u!1 &103011547
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 103011548}
-  m_Layer: 0
-  m_Name: cubegenerator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &103011548
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 103011547}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.118025, y: 1.118025, z: 1.118025}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &147485716
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,7 +327,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5551150070819611880, guid: 98978bbebbfe21649b9193ac6c27c779, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5551150070819611880, guid: 98978bbebbfe21649b9193ac6c27c779, type: 3}
       propertyPath: m_LocalScale.y
@@ -416,7 +385,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.85913
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5551150070819611892, guid: 98978bbebbfe21649b9193ac6c27c779, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 98978bbebbfe21649b9193ac6c27c779, type: 3}
 --- !u!1 &512658125
 GameObject:
@@ -896,8 +866,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0883ae2f60b89a499afcf65ceaa89a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1200
-  turnSpeed: 300
+  speed: 1000
+  turnSpeed: 200
 --- !u!82 &995531095
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1003,7 +973,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2806714669947893885, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2806714669947893885, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
       propertyPath: m_LocalScale.x
@@ -1138,5 +1108,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5551150070819611892, guid: 98978bbebbfe21649b9193ac6c27c779, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 98978bbebbfe21649b9193ac6c27c779, type: 3}
