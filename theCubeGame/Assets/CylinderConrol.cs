@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CylinderConrol : MonoBehaviour
 {
-    public Transform cylindertemplate;
+
     float turningspeed = 180;
     // Start is called before the first frame update
     void Start()
@@ -39,8 +39,7 @@ public class CylinderConrol : MonoBehaviour
 
 
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-                Instantiate(cylindertemplate);
+         
             }
         {
 
