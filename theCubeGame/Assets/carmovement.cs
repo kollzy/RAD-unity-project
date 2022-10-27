@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Carmovement : MonoBehaviour
+public class carmovement : MonoBehaviour
 {
-    public float speed = 1100;
-    public float turnSpeed = 300;
+    public float speed = 1000;
+    public float turnSpeed = 200;
 
 
     private Rigidbody R;

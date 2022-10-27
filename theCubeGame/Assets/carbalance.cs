@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Carbalance : MonoBehaviour
+public class carbalance : MonoBehaviour
 {
 	// i got this code from the internet and i modified it a bit (https://www.youtube.com/watch?v=BwL3Dm8GJtQ)
 	// Start is called before the first frame update
