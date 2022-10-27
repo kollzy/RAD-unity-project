@@ -3,25 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class carmovement : MonoBehaviour
-{ 
-public float carspeed = 20;
-public float turningspeed = 50;
+{
+    public float speed = 1650;
+    public float turnSpeed = 600;
+
+
+    private Rigidbody R;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        R = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-    if (Input.GetKey(KeyCode.W))
-        transform.position += transform.forward * carspeed * Time.deltaTime;
-    if(Input.GetKey(KeyCode.S))
-        transform.position += -transform.forward * carspeed * Time.deltaTime;
-        if (Input.GetKey(KeyCode.A))
-            transform.Rotate(Vector3.up, -turningspeed * Time.deltaTime);
+        if (Input.GetKey(KeyCode.W))
+
+        {
+            R.AddRelativeForce(Vector3.forward * speed * 10);
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            R.AddRelativeForce(-(Vector3.forward * speed * 10) / 2);
+        }
+
         if (Input.GetKey(KeyCode.D))
-            transform.Rotate(Vector3.down, -turningspeed * Time.deltaTime);
+        {
+            R.AddTorque(Vector3.up * turnSpeed * 10);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            R.AddTorque(-Vector3.up * turnSpeed * 10);
+        }
     }
 }

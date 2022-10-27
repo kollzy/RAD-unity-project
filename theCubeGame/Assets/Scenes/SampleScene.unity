@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -349,6 +349,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cubeTemplate: {fileID: 0}
+--- !u!146 &235866749 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 3164543666836587937, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
+  m_PrefabInstance: {fileID: 808417551}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &505551437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -630,6 +635,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!146 &762358543 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 1071991078959207046, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
+  m_PrefabInstance: {fileID: 808417551}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &808417551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -694,8 +704,16 @@ PrefabInstance:
       value: Free Racing Car Red Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7514724142118017493, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
+      propertyPath: m_Drag
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514724142118017493, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
+      propertyPath: m_Mass
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7514724142118017493, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
       propertyPath: m_AngularDrag
-      value: 0.005
+      value: 1.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
@@ -721,6 +739,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0883ae2f60b89a499afcf65ceaa89a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1650
+  turnSpeed: 394.2
+--- !u!114 &853215378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853215373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132740767c6e81b4da5f591041cde2c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WheelL: {fileID: 235866749}
+  WheelR: {fileID: 762358543}
+  balance: 5000
 --- !u!1 &958072061
 GameObject:
   m_ObjectHideFlags: 0
