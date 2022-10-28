@@ -10144,7 +10144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7514724142118017493, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
       propertyPath: m_Drag
-      value: 2
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 7514724142118017493, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
       propertyPath: m_Mass
@@ -10152,7 +10152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7514724142118017493, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
       propertyPath: m_AngularDrag
-      value: 2
+      value: 1.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
@@ -20049,8 +20049,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0883ae2f60b89a499afcf65ceaa89a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
-  turnSpeed: 200
+  speed: 1100
+  turnSpeed: 300
 --- !u!114 &912736532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20065,7 +20065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WheelL: {fileID: 446475956}
   WheelR: {fileID: 1034385165}
-  balance: 5000
+  balance: 3000
 --- !u!82 &912736533
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23173,6 +23173,10 @@ PrefabInstance:
     - target: {fileID: 455828, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2311578, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d7240f2f0843e442b11595c5465dbf7, type: 3}
